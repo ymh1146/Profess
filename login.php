@@ -64,7 +64,14 @@
             默认密码：admin123<br>
             可通过.env设置 ADMIN_PASSWORD 修改
         </p>
-        
+
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="https://github.com/ymh1146/Profess" target="_blank" style="display: inline-flex; align-items: center; padding: 8px 16px; background: #24292e; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.background='#1b1f23'; this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#24292e'; this.style.transform='translateY(0)'">
+                <span style="margin-right: 6px;">⭐</span>
+                GitHub
+            </a>
+        </div>
+
         <a href="show.php" class="back-link">← 返回展示页面</a>
     </div>
 

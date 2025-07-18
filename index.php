@@ -223,6 +223,60 @@ try {
             -webkit-backdrop-filter: blur(10px);
         }
 
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 16px;
+            background: rgba(36, 41, 46, 0.8);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 1s forwards;
+        }
+
+        .github-link:hover {
+            background: rgba(27, 31, 35, 0.9);
+            transform: translateY(-2px);
+        }
+
+        .github-link::before {
+            content: "⭐";
+            margin-right: 6px;
+        }
+
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 16px;
+            background: rgba(36, 41, 46, 0.8);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 1s forwards;
+        }
+
+        .github-link:hover {
+            background: rgba(27, 31, 35, 0.9);
+            transform: translateY(-2px);
+        }
+
+        .github-link::before {
+            content: "⭐";
+            margin-right: 6px;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -352,6 +406,11 @@ try {
                 padding: 12px;
                 margin-top: 25px;
             }
+
+            .github-link {
+                font-size: 10px;
+                padding: 8px 12px;
+            }
         }
 
         @media (max-width: 360px) {
@@ -397,6 +456,10 @@ try {
             <div class="password-hint">
                 默认密码：love520<br>
                 可通过.env设置 FRONT_PASSWORD 修改
+            </div>
+
+            <div style="text-align: center;">
+                <a href="https://github.com/ymh1146/Profess" target="_blank" class="github-link" title="查看源代码">GitHub</a>
             </div>
         </div>
     </div>

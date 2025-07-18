@@ -382,13 +382,36 @@ if (!isAuthenticated()) {
         .sortable-chosen {
             transform: scale(1.02);
         }
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            background: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            margin-right: 10px;
+        }
+        .github-link:hover {
+            background: #1b1f23;
+            transform: translateY(-1px);
+        }
+        .github-link::before {
+            content: "⭐";
+            margin-right: 6px;
+        }
     </style>
 </head>
 <body>
     <div class="admin-container">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
             <h1 class="admin-title" style="margin-bottom: 0;">💕Profess-表白后台</h1>
-            <button onclick="logout()" style="padding: 8px 16px; background: #ff6b6b; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;">退出登录</button>
+            <div style="display: flex; align-items: center;">
+                <a href="https://github.com/ymh1146/Profess" target="_blank" class="github-link" title="查看源代码">GitHub</a>
+                <button onclick="logout()" style="padding: 8px 16px; background: #ff6b6b; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;">退出登录</button>
+            </div>
         </div>
         
         <div class="form-group">
